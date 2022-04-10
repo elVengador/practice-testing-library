@@ -10,9 +10,12 @@ export const CounterWithVariation = () => {
             <h5>Counter with Variation:</h5>
             <h2>Counter: {counter}</h2>
             <div>
-                <p>{variant}</p>
+                <div>
+                    <label htmlFor='variation'>Variation: {variant}</label>
+                </div>
                 <input
                     type="range"
+                    id='variation'
                     min={1}
                     max={10}
                     value={variant}
